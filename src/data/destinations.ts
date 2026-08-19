@@ -1,0 +1,36 @@
+export type Destination = {
+  id: string;
+  name: string;
+  region: "South India" | "North India" | "West India" | "Islands & Special Destinations";
+  shortDescription: string;
+  image: string;
+  imageAlt?: string;
+  seoTitle?: string;
+  highlights: string[];
+  suggestedDuration: string;
+};
+
+export const destinationsData: Destination[] = [
+  // South India
+  { id: "kerala", name: "Kerala", region: "South India", shortDescription: "Discover scenic Kerala tour packages from Chennai. Enjoy tranquil backwaters, lush hill stations, and comfortable stays for a memorable holiday.", image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=800&auto=format&fit=crop", imageAlt: "Kerala backwaters and scenic tropical landscape", highlights: ["Houseboats", "Tea Gardens", "Ayurveda"], suggestedDuration: "5-7 Days" },
+  { id: "ooty", name: "Ooty", region: "South India", shortDescription: "The Queen of Hill Stations famous for tea gardens and the Nilgiri Mountain Railway.", image: "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=800&auto=format&fit=crop", imageAlt: "Ooty scenic hill station and tea gardens", highlights: ["Botanical Garden", "Ooty Lake", "Nilgiri Railway"], suggestedDuration: "2-3 Days" },
+  { id: "kodaikanal", name: "Kodaikanal", region: "South India", shortDescription: "Book amazing Kodaikanal tour packages from Chennai. Experience the misty lakes, beautiful pine forests, and relaxing stays for the perfect getaway.", image: "/kodaikanal.png", imageAlt: "Kodaikanal hill station surrounded by green landscapes", highlights: ["Kodai Lake", "Coaker's Walk", "Pine Forest"], suggestedDuration: "2-3 Days" },
+  { id: "coorg", name: "Coorg", region: "South India", shortDescription: "Plan your trip with Coorg tour packages from Chennai. Explore lush coffee plantations, stunning waterfalls, and enjoy a relaxing nature holiday.", image: "/coorg.png", imageAlt: "Coorg scenic landscape and coffee plantations", highlights: ["Abbey Falls", "Coffee Estates", "Dubare Elephant Camp"], suggestedDuration: "3-4 Days" },
+  { id: "mysore", name: "Mysore", region: "South India", shortDescription: "Discover the royal heritage with our Mysore tour packages from Chennai. Visit magnificent palaces, rich cultural sites, and enjoy a premium stay.", image: "/mysore.png", imageAlt: "Mysore palace and royal heritage", highlights: ["Mysore Palace", "Chamundi Hill", "Brindavan Gardens"], suggestedDuration: "1-2 Days" },
+
+  // North India
+  { id: "kashmir", name: "Kashmir", region: "North India", shortDescription: "Experience Paradise on Earth with Kashmir tour packages from Chennai. Enjoy snow-capped mountains, serene Dal Lake rides, and unforgettable stays.", image: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?q=80&w=800&auto=format&fit=crop", imageAlt: "Kashmir scenic valley and mountain landscape", highlights: ["Shikara Ride", "Gulmarg Gondola", "Pahalgam Valley"], suggestedDuration: "5-7 Days" },
+  { id: "himachal-pradesh", name: "Himachal Pradesh", region: "North India", shortDescription: "Book customized Himachal Pradesh tour packages from Chennai. Explore spectacular valleys, ancient monasteries, adventure sports, and scenic landscapes.", image: "/himachal.png", imageAlt: "Scenic Himalayan mountains in Himachal Pradesh", seoTitle: "Himachal Tour Packages from Chennai | Heaven Incarnate", highlights: ["Manali", "Shimla", "Rohtang Pass"], suggestedDuration: "6-8 Days" },
+  { id: "uttarakhand", name: "Uttarakhand", region: "North India", shortDescription: "Discover the Land of Gods with Uttarakhand tour packages from Chennai. Experience majestic Himalayas, sacred rivers, and a peaceful holiday getaway.", image: "/uttarakhand.png", imageAlt: "Uttarakhand scenic mountains and sacred rivers", highlights: ["Rishikesh", "Nainital", "Jim Corbett"], suggestedDuration: "5-6 Days" },
+  { id: "delhi", name: "Delhi", region: "North India", shortDescription: "Explore vibrant Delhi tour packages from Chennai. Discover a unique blend of rich history, majestic monuments, and modern city life on your holiday.", image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=800&auto=format&fit=crop", imageAlt: "Delhi capital city and historical monuments", highlights: ["Red Fort", "India Gate", "Qutub Minar"], suggestedDuration: "2-3 Days" },
+  { id: "agra", name: "Agra", region: "North India", shortDescription: "Book exciting Agra tour packages from Chennai. Witness the iconic Taj Mahal, stunning Mughal architecture, and enjoy a comfortable historical holiday.", image: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800&auto=format&fit=crop", imageAlt: "Agra Taj Mahal and Mughal architecture", highlights: ["Taj Mahal", "Agra Fort", "Fatehpur Sikri"], suggestedDuration: "1-2 Days" },
+
+  // West India
+  { id: "goa", name: "Goa", region: "West India", shortDescription: "Famous for its pristine beaches, vibrant nightlife, and Portuguese heritage.", image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=800&auto=format&fit=crop", imageAlt: "Goa beach and coastal holiday destination", highlights: ["Beaches", "Churches", "Water Sports"], suggestedDuration: "4-5 Days" },
+  { id: "rajasthan", name: "Rajasthan", region: "West India", shortDescription: "Experience the Land of Kings with Rajasthan tour packages from Chennai. Explore grand forts, royal palaces, desert safaris, and rich local culture.", image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=800&auto=format&fit=crop", imageAlt: "Rajasthan heritage architecture and cultural destination", seoTitle: "Rajasthan Tour Packages from Chennai | Heaven Incarnate", highlights: ["Jaipur Forts", "Udaipur Lakes", "Jaisalmer Desert"], suggestedDuration: "7-10 Days" },
+  { id: "mumbai", name: "Mumbai", region: "West India", shortDescription: "Plan your trip with Mumbai tour packages from Chennai. Discover the bustling City of Dreams, colonial architecture, and beautiful coastal views.", image: "https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?q=80&w=800&auto=format&fit=crop", imageAlt: "Mumbai city skyline and coastal view", highlights: ["Gateway of India", "Marine Drive", "Elephanta Caves"], suggestedDuration: "2-3 Days" },
+
+  // Islands & Special
+  { id: "andaman", name: "Andaman Islands", region: "Islands & Special Destinations", shortDescription: "Crystal clear waters, white sandy beaches, and world-class scuba diving.", image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop", imageAlt: "Beautiful Andaman Islands tropical beach destination", seoTitle: "Andaman Tour Packages from Chennai | Heaven Incarnate", highlights: ["Havelock Island", "Radhanagar Beach", "Cellular Jail"], suggestedDuration: "5-6 Days" },
+  { id: "north-east", name: "North East India", region: "Islands & Special Destinations", shortDescription: "Unexplored pristine landscapes, diverse cultures, and living root bridges.", image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop", imageAlt: "Scenic landscape of Northeast India", highlights: ["Kaziranga", "Shillong", "Tawang"], suggestedDuration: "7-10 Days" }
+];
