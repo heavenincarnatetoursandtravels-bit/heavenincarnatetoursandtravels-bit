@@ -1,14 +1,13 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 function isValidString(val: any, maxLength: number): boolean {
   return typeof val === 'string' && val.trim().length > 0 && val.trim().length <= maxLength;
 }
 
 export async function POST(request: Request) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const body = await request.json();
     const { name, email, phone, subject, message } = body;
 
